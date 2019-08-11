@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.javabrains.moviecatalogservice.models.CatalogItems;
 
+
 @RestController
 @RequestMapping("/catalog")
 public class MovieCatalogResource {
@@ -17,7 +18,7 @@ public class MovieCatalogResource {
 	public List<CatalogItems> getCatalog(@PathVariable("userid") String userId){
 		
 		return Collections.singletonList(
-				new CatalogItems("Transformers", "Test", 4)
+				new CatalogItems("Transformers", "Test2", 4)
 				);
 				
 	}
