@@ -38,7 +38,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>VERSION GOES HERE</version>
 				<configuration>
-					<dockerhost>http://172.18.2.50:2357</dockerhost>
+					<dockerhost>http://172.17.0.1:2357</dockerhost>
 					<imageName>004wearedm</imageName>
 					<baseImage>java:8</baseImage>
 					<entryPoint>["java", "-jar", "${project.build.finalName}.jar"]</entryPoint>
